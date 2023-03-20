@@ -40,8 +40,7 @@
     <?php
     error_reporting(E_ERROR | E_PARSE);
     session_start();
-    if(isset($_SESSION["Account"])==0)
-    {
+    if (isset($_SESSION["Account"]) == 0) {
         header('Location: index.php');
         exit();
     }
@@ -60,7 +59,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand " href="#">WebSiteName</a>
+                <a class="navbar-brand " href="#">Food Delivery Service</a>
             </div>
         </div>
     </nav>
@@ -595,7 +594,7 @@
                             include("shop_order.php");
 
                             ?>
-                        <!--/table-->
+                            <!--/table-->
                     </div>
                 </div>
             </div>
@@ -648,10 +647,10 @@
                                 </tr>
                             </thead>
                             <?php
-    
-                            
+
+
                             include("my_order.php");
-                            
+
 
                             ?>
                         </table>
